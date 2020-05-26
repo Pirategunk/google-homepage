@@ -1,0 +1,80 @@
+body {
+    font-family: arial, san-serif;
+    color: #000;
+    opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a: cursor{
+    pointer;
+}
+
+div {
+    display: block;
+}
+
+.content {
+    background-color: aqua;
+    color: white;
+    position: relative;
+}
+
+.Left_Nav {
+    position: absolute;
+    margin: 7px 0 0 10px;
+    font-size: 13px;
+}
+
+.Right_Nav {
+    display: flex;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-size: 13px; 
+
+}
+.Apps_Button {
+
+
+}
+.Profile_Button img {
+    border-radius: 60%;
+
+
+
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.Right_Nav a {
+    margin-left: 15px;
+}
+
+.Left_Nav a {
+    display: inline-block;
+    padding-left: 15px;
+}
+.Logo {
+display: flex;
+justify-content: center;
+padding-top: 109px;
+}
+.searchcontainer{
+    display: flex;
+}
+.inputbar {
+    
+}
