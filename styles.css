@@ -1,3 +1,89 @@
+/* BEGIN CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* END CSS RESET */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Begin google-homepage Custom Styling */
+
 body {
     font-family: arial, san-serif;
     color: #000;
@@ -6,24 +92,11 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
-}
-
-a: cursor{
-    pointer;
-}
-
-div {
-    display: block;
-}
-
-.content {
-    background-color: aqua;
-    color: white;
-    position: relative;
 }
 
 .Left_Nav {
@@ -41,15 +114,16 @@ div {
     flex-wrap: nowrap;
     justify-content: flex-end;
     font-size: 13px; 
+    align-items: center;
+}
+.Nav_Settings {
+    display: flex;
+    align-items: center;
 
 }
-.Apps_Button {
 
-
-}
 .Profile_Button img {
     border-radius: 60%;
-
 
 
 }
@@ -71,10 +145,77 @@ div {
 display: flex;
 justify-content: center;
 padding-top: 109px;
+padding-bottom: 20px;
 }
-.searchcontainer{
+.SearchBar {
+display: flex;
+width: 482px;
+height: 44px;
+margin: 0 auto;
+justify-content: center;
+border-radius: 24px;
+border: 1px solid #dfe1ef
+}
+
+.searchIcon {
+    fill: #9AA0A6;
+    align-self: center;
+    width: 20px;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+.micIcon {
+    width: 24px;
+    align-self: center;
+}
+
+.input {
+width: 387px;
+border-color: transparent;
+}
+.input:focus {
+    outline: none;
+}
+.buttonContainer {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 18px;
 }
-.inputbar {
-    
+.buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    color: #5F6368;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    margin: 11px 4px;
+    height: 36px;
+    min-width: 54px;
+    background-image: -webkit-linear-gradient(top,#ffffff,#f1f1f1);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 41px;
+    line-height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerRight {
+    display: flex;
+    margin-right: 30px;
+}
+.footerLeft {
+    display: flex;
+    margin-left: 30px;
+}
+.footerText{
+    text-decoration: none;
+    padding-left: 27px;
+    font-family: Arial, sans-serif;
+    color: #5f6368;
 }
